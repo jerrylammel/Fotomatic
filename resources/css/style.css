@@ -237,28 +237,41 @@ header .mobile {
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 1.185rem;
   background-color: white;
+  height: 39.6875rem;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 2rem auto; /* this makes the height of the image is not exactly 65% of 635px(height of .feature) */
+}
+
+.feature .image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.feature .content {
+  margin: 0 3rem;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
+  font-family: 'Roboto';
   font-weight: bold;
+  line-height: 1.2;
   color: #4a4a4a;
 }
 
 .feature h3 {
   font-size: 1rem;
+  font-family: 'Roboto';
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: lighter;
   color: #4a4a4a;
 }
 

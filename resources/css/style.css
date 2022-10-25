@@ -78,12 +78,62 @@ header .icon {
   padding-left: .75rem;
 }
 
+header .tablet {
+  display: none;
+}
+
 header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+
+@media only screen and (max-width: 768px) {
   header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile {
+    display: none;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .tablet ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .tablet li {
+    padding: 0 1rem;
+  }
+
+  header .tablet .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header .logo {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
     display: none;
   }
 
@@ -180,7 +230,7 @@ header .mobile {
   box-sizing: border-box
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;

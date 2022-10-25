@@ -303,31 +303,47 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 2.875rem 0;
   background-color: #4a4a4a;
 }
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 #filters-section .content h2 {
   font-size: 2.25rem;
+  font-family: 'Roboto';
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
   font-size: 1rem;
   line-height: 1.4;
-  font-weight: 300;
+  font-family: 'Roboto';
+  font-weight: lighter;
   color: white;
+  margin-bottom: 5rem;
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .image-container {
+  width: 25%;
+  height: auto;
+}
+
+#filters-section .image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 760px) {

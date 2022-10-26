@@ -253,6 +253,9 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;    
   }
 
   #sign-up-cta {

@@ -367,7 +367,7 @@ header .mobile {
   font-weight: lighter;
   color: #4a4a4a;
 }
-
+/* 
 @media only screen and (max-width: 890px) {
   .feature h2 {
     font-size: 1.125rem;
@@ -379,17 +379,45 @@ header .mobile {
     font-size: .875rem;
     line-height: 1.4;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   #features-section {
-    flex-flow: column;
-    padding: 1rem;
+    padding: 1rem 0;
+    justify-content: space-around;
   }
 
   .feature {
+    margin: 0 0.6rem;
+    padding: 1rem 1rem 1.875rem 1rem;
+    height: auto;
+  }
+
+  .feature .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .feature .image-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1.5rem auto;
+  }  
+
+  .feature .content {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    text-align: left;
+  }
+
+  .feature h2 {
+    font-size: 1.725rem;
+  }
+
+  .feature h3 {
+    font-size: 0.875rem;
+    line-height: 1.2;
   }
 }
 

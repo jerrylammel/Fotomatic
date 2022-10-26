@@ -285,7 +285,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 20rem;
-    background-position: right;
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }

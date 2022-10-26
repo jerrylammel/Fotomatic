@@ -31,7 +31,13 @@ html {
 
 @media only screen and (max-width: 768px) {
   .main-content {
-    top: 2.5625rem;
+    top: 2.5625rem;/*to addjust*/
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main-content {
+    top: 3rem;
   }
 }
 
@@ -147,12 +153,13 @@ header .mobile {
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: .6875rem 0;
+    margin: 0 1rem;
   }
 
   header .mobile ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -161,10 +168,17 @@ header .mobile {
     padding: 0;
   }
 
+  header .mobile li a {
+    vertical-align: bottom;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+
   header .mobile .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
-    line-height: 1.6;
+    line-height: 1.5;
     color: white;
   }
 }
@@ -268,7 +282,29 @@ header .mobile {
 
 @media only screen and (max-width: 450px) {
   #sign-up-section {
+    align-items: center;
+    justify-content: center;
     height: 20rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
   }
 
   #sign-up-cta h1 {

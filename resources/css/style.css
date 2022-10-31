@@ -262,6 +262,8 @@ header .mobile {
     position: static;
     width: auto;
     height: auto;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
     background-color: transparent;
     border: none;
   }
@@ -297,6 +299,7 @@ header .mobile {
     position: static;
     width: auto;
     height: auto;
+    padding: 0;
     margin: auto;
     background-color: transparent;
     border: none;
@@ -304,6 +307,7 @@ header .mobile {
 
   #sign-up-cta .content {
     margin-top: 0;
+    width: 100%;
   }
 
   #sign-up-cta .email {

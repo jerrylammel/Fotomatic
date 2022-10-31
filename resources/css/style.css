@@ -119,11 +119,7 @@ header .mobile {
   }
 
   header .tablet li {
-    padding: 0 1rem;
-  }
-
-  header .tablet li:last-child {
-    padding: 0 0.5rem 0 1rem;
+    padding: 0 0.5rem;
   }
 
   header .tablet .button {

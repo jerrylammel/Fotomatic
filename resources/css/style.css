@@ -8,7 +8,6 @@ html {
 
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
 }
 
 .center {
@@ -27,18 +26,6 @@ html {
 
 .image-container img {
   display: block;
-}
-
-@media only screen and (max-width: 768px) {
-  .main-content {
-    top: 2.5625rem;/*to addjust*/
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .main-content {
-    top: 3rem;
-  }
 }
 
 /* Header */
@@ -108,7 +95,7 @@ header .mobile {
   }
 
   header .content {
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 1.2rem 0 1.2rem 1rem;
   }
 
   header .tablet ul {
@@ -176,6 +163,23 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.5;
     color: white;
+  }
+}
+
+/* main content offset to height of header */
+.main-content {
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main-content {
+    top: 3rem;
   }
 }
 
